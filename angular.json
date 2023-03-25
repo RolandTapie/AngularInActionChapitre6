@@ -103,5 +103,7 @@
       }
     }
   },
-  "defaultProject": "AngularInActionChapitre6"
+  "cli": {
+    "analytics": false
+  }
 }
