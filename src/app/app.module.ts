@@ -8,6 +8,7 @@ import { TickerComponent } from './ticker/ticker.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {AccountService} from "./services/account.service";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {ClarityModule} from "@clr/angular";
 
 @NgModule({
   declarations: [
@@ -17,11 +18,12 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
     StocksComponent,
     TickerComponent
   ],
-  imports: [
-    BrowserModule,
-    NgbModule,
-    HttpClientModule
-  ],
+    imports: [
+        BrowserModule,
+        NgbModule,
+        HttpClientModule,
+        ClarityModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

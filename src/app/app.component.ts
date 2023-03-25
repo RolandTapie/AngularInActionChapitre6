@@ -10,9 +10,10 @@ import {Stock} from "./services/stocks.model";
 })
 export class AppComponent implements OnInit {
   title = 'AngularInActionChapitre6';
-  private stocks: Stock[] = [];
+ stocks: Stock[] = [];
   private interval: any;
-  private refresh!: boolean;
+  public refresh: boolean =true;
+
 
   constructor(public accountService: AccountService, public stockservice: StocksService) {
   }

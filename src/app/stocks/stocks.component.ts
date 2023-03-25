@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {AccountService} from "../services/account.service";
 import {Stock} from "../services/stocks.model";
 
@@ -8,7 +8,8 @@ import {Stock} from "../services/stocks.model";
   styleUrls: ['./stocks.component.css']
 })
 export class StocksComponent implements OnInit {
-
+  @Input() stocks: any;
+  total: number = 5;
   constructor(private accountService: AccountService) { }
 
   buy(stock :Stock): void {
