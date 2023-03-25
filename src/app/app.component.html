@@ -1,13 +1,12 @@
 <div class="main-container">
   <header class="header-6">
-    <div class="card-header">
+    <div class="branding">
       <a class="nav-link">
      <clr-icon shape="analytics"></clr-icon>
-        <i class="bi bi-search"></i>
         <span class="title">Fantasy Portfolio</span>
       </a>
     </div>
-     <div class="header navbar">
+     <div class="header-nav">
       <span class="nav-link"><span class="nav-text">Cash: {{accountService.balance | currency:'EUR':'symbol':'.2'}}</span></span>
       <span class="nav-link"><span class="nav-text">Value: {{accountService.value | currency:'EUR':'symbol':'.2'}}</span></span>
       <span class="nav-link"><span class="nav-text">Cost: {{accountService.cost | currency:'EUR':'symbol':'.2'}}</span></span>
@@ -32,11 +31,10 @@
 
   </header>
 
-  <div class="header-actions">
   <nav class="subnav">
-<!--    <app-ticker [stocks]="stocks"></app-ticker>-->
+<!-- <app-ticker [stocks]="stocks"></app-ticker>-->
   </nav>
-</div>
+
 
   <div class="content-container">
     <div class="content-area">
